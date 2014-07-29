@@ -25,25 +25,31 @@ gem 'jbuilder', '~> 2.0'
 #gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+gem 'simple_form' , group: :development
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'capistrano-rails', group: :development
+
+# Allows me to set ruby environment variables
+gem 'figaro'
+
+gem "binding_of_caller"
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+# gem 'debugger2', group: [:development, :test]]
+ gem 'byebug'
 
 # learn-rails
 
 # Helps to use rails without database
 gem 'activerecord-tableless'
-
+	
 # Front End Framework
 gem 'foundation-rails'
 
@@ -57,11 +63,11 @@ gem 'google_drive'
 gem 'high_voltage'
 
 # Simple Form Generator
-gem 'simple_form'
 group :development do
-  gem 'better_errors'
-  gem 'quiet_assets'
-  gem 'rails_layout'
+	gem 'better_errors'
+	gem 'quiet_assets'
+	gem 'rails_layout'
+	gem 'spring'
 end
 
 
