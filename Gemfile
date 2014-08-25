@@ -44,6 +44,7 @@ gem "binding_of_caller"
 # Use debugger
 # gem 'debugger2', group: [:development, :test]]
  gem 'byebug'
+ gem 'pry'
 
 # learn-rails
 
